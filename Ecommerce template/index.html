@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Name | Project Name</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet" href="assets/javascripts/main.js">
+    <!--font awesome for using icons -->
+    <script src="https://kit.fontawesome.com/2f44437034.js" crossorigin="anonymous"></script>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Robot font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+
+        <!--  Topbar  -->
+
+        <div id="topbar">
+            <div class="container">
+                <div class="row justify-between">
+                    <!--use ul<li> or different divs if multiple items are in topbar-->
+                    <div class="col col-1">
+                        left side topbar 
+                    </div>
+                    <div class="col col-2">
+                        right side top bar 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!--  Header  -->
+        
+        <header id="header">
+            <div class="container">
+                <div class="row justify-between align-center">
+                    <div class="col logo">
+                        <!--either image or put this in h1 tag, within a tag bcuz logo is always clickable-->
+                        <h1>Heading</h1>
+                    </div>
+                    <div class="col search">
+                        <form action="">
+                            <input type="text" placeholder="search here">
+                            <button>
+                                <!-- class="fas fa-search" for search icon-->
+                                <i>search</i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col others justify-between">
+                        <!--depends on specific website-->
+                        others
+                    </div>
+                </div>
+            </div>
+        </header>
+        <hr>
+        
+        <!--  Navbar  -->
+
+        <div id="navbar">
+            <div class="container">
+                <div class="row justify-between align-center">
+                    <div class="categories">
+                        <select>
+                            <option>All Categories</option>
+                            <option value="">option1</option>
+                            <option value="">option2</option>
+                            <option value="">option3</option>
+                            <option value="">option4</option>
+                            <option value="">option5</option>
+                            <option value="">option6</option>
+                        </select>
+                    </div>
+                    <nav id="options">
+                        <ul class="row justify-around">
+                            <li class="active"><a href="">options 1</a></li>
+                            <li class="dropdown">
+                                <a href="">
+                                    options 2
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <h2>Heading</h2>
+                                    <ul>
+                                        <li><a href="">option1</a></li>
+                                        <li><a href="">option1</a></li>
+                                        <li><a href="">option1</a></li>
+                                        <li><a href="">option1</a></li>
+                                        <li><a href="">option1</a></li>
+                                        <li><a href="">option1</a></li>
+                                        <li><a href="">option1</a></li>
+                                        <li><a href="">option1</a></li>
+                                        <li><a href="">option1</a></li>
+                                        <li><a href="">option1</a></li>
+                                        <li><a href="">option1</a></li>
+                                        <li><a href="">option1</a></li>
+                                        <li><a href="">option1</a></li>
+                                        <!--  can fill space with empty items for better alignment  -->
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">options 3</a></li>
+                            <li>
+                                <a href="">options 4</a>
+                               
+                            </li>
+                            <li><a href="">options 5</a></li>
+                            <li>
+                                <a href="">options 6</a>
+                                
+                            </li>
+                            <li><a href="">options 7</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!--  Banner  -->
+
+        <div id="banner">
+            <div id="slider" class="row">
+                <div class="slide">
+                    <div class="text">
+                        <div class="container">
+                            <!--optional-->
+                        content
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img class="w-100" src="/assets/images/Screenshot (1036).png" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="text">
+                        <div class="container">
+                            <!--optional-->
+                        content
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img class="w-100" src="/assets/images/Screenshot (1037).png" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="text">
+                        <div class="container">
+                            <!--optional-->
+                        content
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img class="w-100" src="/assets/images/Screenshot (1038).png" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="text">
+                        <div class="container">
+                            <!--optional-->
+                        content
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img class="w-100" src="/assets/images/Screenshot (1039).png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  Content  -->
+
+        <div id="content">
+            <div class="container">
+                <h2>sub-headring</h2>
+                <div class="row">
+
+                    <!--  Sidebar  -->
+
+                    <aside id="sidebar">
+                        <div class="widgets">
+                            <!-- copy this widget class for more widgets -->
+                            <div class="widget">
+                                <h3>side heading</h3>
+                                <ul>
+                                    <li>option</li>
+                                    <li>option</li>
+                                    <li>option</li>
+                                    <li>option</li>
+                                    <li>option</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!--  Main  -->
+
+                    <main id="main">
+                        <div class="row justify-between">
+                            <div class="col-1 col">
+                                <!-- single item card -->
+                                <div class="card">
+                                    <div class="image">
+                                        <a href=""><img src="/assets/images/Screenshot (1041).png" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>name</p>
+                                        <p>price</p>
+                                        <button>buy</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1 col">
+                                <!-- single item card -->
+                                <div class="card">
+                                    <div class="image">
+                                        <a href=""><img src="/assets/images/Screenshot (1041).png" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>name</p>
+                                        <p>price</p>
+                                        <button>buy</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1 col">
+                                <!-- single item card -->
+                                <div class="card">
+                                    <div class="image">
+                                        <a href=""><img src="/assets/images/Screenshot (1041).png" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>name</p>
+                                        <p>price</p>
+                                        <button>buy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-between">
+                            <div class="col-1 col">
+                                <!-- single item card -->
+                                <div class="card">
+                                    <div class="image">
+                                        <a href=""><img src="/assets/images/Screenshot (1041).png" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>name</p>
+                                        <p>price</p>
+                                        <button>buy</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1 col">
+                                <!-- single item card -->
+                                <div class="card">
+                                    <div class="image">
+                                        <a href=""><img src="/assets/images/Screenshot (1041).png" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>name</p>
+                                        <p>price</p>
+                                        <button>buy</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1 col">
+                                <!-- single item card -->
+                                <div class="card">
+                                    <div class="image">
+                                        <a href=""><img src="/assets/images/Screenshot (1041).png" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>name</p>
+                                        <p>price</p>
+                                        <button>buy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <!--  Footer  -->
+
+        <footer>
+            <div class="row justify-center" id="footer">
+                <p>© 2021 E-commerse. All rights reserved | Design by </p><a href=""> Mohit.</a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-size: cover;
+            color: white;
+            font-family: 'Acme', sans-serif;
+            background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dce3647b-6179-463c-b4c8-bd642f5bb216/da4f4gg-be1f2697-69ac-4569-9c34-ac77393df366.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZGNlMzY0N2ItNjE3OS00NjNjLWI0YzgtYmQ2NDJmNWJiMjE2XC9kYTRmNGdnLWJlMWYyNjk3LTY5YWMtNDU2OS05YzM0LWFjNzczOTNkZjM2Ni5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.Hhw0NTe0BqEbXc9bdfhvlHO07vyGxmm14QR_ttswV74");
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            margin-top: 150px;
+            text-align: center;
+            font-size: 55px;
+        }
+        table{
+            height: 150px;
+            width: 400px;
+            font-size: 20px;
+
+        }
+        input{
+            height: 30px;
+            width: 220px;
+            border-radius: 5px;
+            padding-left: 8px;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            height: 40px;
+            width: 200px;
+            margin-left: 100px;
+            margin-top: 30px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <div>
+        <table>
+            <tr>
+                <td>Enter Email :</td>
+                <td>
+                    <input type="email" placeholder="Enter Email ID" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password :</td>
+                <td>
+                    <input type="password" placeholder="Enter Password" id="pwd">
+                </td>
+            </tr>
+            </table>
+            <button onclick="login()">Login</button> 
+    </div>
+    <script>
+        function login() {
+            var http = new XMLHttpRequest();
+            var details = {
+                "email" : document.querySelector("#email").value,
+                "pwd" : document.querySelector("#pwd").value
+            };
+            var data = JSON.stringify(details);
+            var url = "https://shop-api-mohit.herokuapp.com/login";
+            http.onreadystatechange = function() {
+                if(http.readyState == 4 && http.status == 200) {
+                    console.log(http.responseText);
+                    var json = JSON.parse(this.responseText);
+                    localStorage.setItem("token",json.token);
+                    location.href = "dashboard.html";
+                }
+            }
+            http.open('post',url,true);
+            http.setRequestHeader('Content-Type','application/json');
+            http.send(data);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+/*
+Mjor break Ponits fr Media Query
+1200px
+992px
+768px
+576px
+*/
+/* Global Settings */
+*{                              /*  *  is universal selector*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;     /*for adjusting padding within div*/
+}
+body{
+    font-family: 'Mukta Malar', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*Helper Classes*/
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear::after{
+    content: "";
+    clear:both;
+    display: block;
+}
+.w-100{
+    width: 100%;
+}
+.row{
+    display: flex;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.grid{
+    display: grid;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-between{
+    justify-content: space-between;
+}
+/* Page Level Settings */
+
+/* container */
+#container{
+
+}
+.container{
+    width: 1215px;
+    margin: 0 auto;
+}
+/* Header */
+#header{
+    background-image: linear-gradient(1deg,#15457C,#051423);
+    height: 500px;
+}
+#header .topbar{
+    padding-top: 6px;
+    height: 40px;
+}
+#header .topbar .logo a{
+    
+}
+#header .topbar .logo a img{
+    width: 112px;
+}
+#header .topbar .options{
+    width: 58%;
+}
+#header .topbar .options hr{
+    opacity: 0.4;
+}
+#header .topbar .options a{
+    color: white;
+}
+#header .topbar .options ul li a img{
+    width: 45px;
+    height: 23px;
+    margin-top: 10px;
+}
+#header .topbar .options .option-1{
+    width: 27%;
+}
+#header .topbar .options .option-1 a{
+    font-size: 16px;
+    font-weight: 500;
+}
+#header .topbar .options .option-1 span{
+    font-size: 11px;
+    margin-top: -10px;
+}
+#header .topbar .options .option-2{
+    width: 23%;
+}
+#header .topbar .options .option-2 i{
+    color: #F09F07;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+#header .topbar .options .option-2 a{
+    font-size: 15px;
+}
+#header .topbar .options .option-2 span{
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: -10px;
+}
+#header .topbar .options .option-3{
+    width: 30%;
+    background-image: linear-gradient(90deg,#51AFFD,#095DF4);
+    border-radius: 4px;
+}
+#header .option-3 span{
+    font-size: 12px;
+    margin-top:2px ; 
+    margin-left:6px; 
+}
+#header .topbar .options .option-3 a{
+    margin-top: 6px;
+}
+#header .topbar .options .option-3 i{
+    margin-top: 10px;
+}
+#header .my{
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    color:#3B97FA ;
+    border-radius: 50%;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+#header .topbar .options .option-4{
+    width: 17%;
+    background-color: #2B3845;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px;
+}
+#header .option-4 img{
+    width: 15px !important;
+    height: 12px !important;
+    margin-top: 0px !important;
+    padding-right: 3px;
+}
+#header .option-4 i{
+    margin-left: 4px;
+}
+/* Navbar */
+#navbar{
+
+}
+/* Banner */
+#banner{
+
+}
+/* Main */ 
+#main{
+
+}
+/* Sidebar  */
+#sidebar{
+    
+}
+/* Footer */
+#footer{
+
+}
+/* Specific CSS */ 
+/* Page-1 */
+/* Page-2 */
+/* ....
+.....
+*/

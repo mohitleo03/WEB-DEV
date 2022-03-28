@@ -1,0 +1,281 @@
+/*
+Mjor break Ponits fr Media Query
+1200px
+992px
+768px
+576px
+*/
+/* Global Settings */
+:root{
+    --my-color :black;          /*global variable for color frequently used*/
+}
+*{                              /*  *  is universal selector*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;     /*for adjusting padding within div*/
+}
+body{
+    font-family: 'Roboto', sans-serif;  /*roboto implemented on whole body text*/
+    overflow-x: hidden;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*Helper Classes*/
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear::after{
+    content: "";
+    clear:both;
+    display: block;
+}
+.w-100{
+    width: 100%;
+}
+.row{
+    display: flex;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.grid{
+    display: grid;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-between{
+    justify-content: space-between;
+}
+/* Page Level Settings */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* container */
+#container{
+
+}
+/* Topbar */
+#topbar{
+    padding: 5px 0px;
+    font-size: 14px;
+    font-weight: 300;
+}
+hr{
+    opacity: 0.5;
+}
+#topbar a{
+
+}
+#topbar i{
+    
+}
+/* Header */
+#header{
+    padding: 20px 0px;
+}
+#header .logo{
+
+}
+#header .search{
+    width: 50%;
+}
+#header .search input[type="text"]{
+    width: 85%;
+    height: 45px;
+    padding: 5px;
+}
+#header button{
+    width: 50px;
+    height: 40px;
+    border: 1px solid black;
+}
+#header .others{
+    width: 20%;
+}
+/* Navbar */
+#navbar{
+    padding: 10px 0px;
+}
+#navbar .categories{
+    width: 20%;
+}
+#navbar .categories select{
+    width: 100%;
+    padding: 10px 5px;
+}
+#navbar nav{
+    width: 70%;
+}
+#navbar nav li{
+    padding: 5px 0px;
+}
+#options ul{
+    position: relative;
+}
+#options ul li a{
+    color: black;
+}
+#options li.active a{
+    color: blue;
+}
+#options ul li.dropdown a{
+    position: relative;
+}
+/*we can create our own traingle by this 
+first create an after element
+then adjust the border size and
+give background color to it 
+give first color of which u want traingle
+and rest three transparent
+#options ul li.dropdown a::after{
+    content:"";
+    border: 5px solid black;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: calc(50% - 4px);
+    right: -15px;
+
+    Refer electronic mart page 
+    the triangle will be also displayed with dropdown ul li a so give it a transparent triangle
+}*/
+
+#options ul li .dropdown-menu{
+    position: absolute;
+    width: 90%;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.9);
+    top: 30px;
+    background-color: white;
+    /*display: none;  try another technique for transform animation*/
+    transform: scale(1,0);
+}
+.dropdown-menu ul{
+    column-count: 2;
+}
+.dropdown-menu a::after{
+    content: "";
+    border-color: transparent;
+}
+#options ul li .dropdown-menu h2{
+    margin-bottom: 20px;
+}
+#options ul li:hover .dropdown-menu{
+    /*display: block;*/
+    transform: scale(1,1);
+    transition-duration: 0.2s;
+    transform-origin: top ;
+    z-index: 1;
+}
+/* Banner */
+#banner{
+    
+}
+#banner .text{
+    padding: 80px 0px;
+}
+#slider{
+    width: 400%;    /*x slides so x*100% width*/
+    animation: slider 20s infinite linear;
+}
+@keyframes slider {
+    /*manage % according to number of slides*/
+    0%,20%{
+        transform:translateX(0%);
+    }
+    25%,45%{
+        transform:translateX(-25%);
+    }
+    50%,70%{
+        transform:translateX(-50%);
+    }
+    75%,95%{
+        transform:translateX(-75%)
+    }
+    100%{
+        transform:translateX(-100%)
+    }
+}
+#slider .slide{
+    width: 25%;     /*total width of each slide should be 100%*/
+    position: relative; /*slider will move with respect to main slide*/
+}
+#banner .slide .image{
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+}
+#banner .image img{
+    height: 300px;
+    object-fit: cover;  /* to fit objects , so that aspect ratio is as it is and clips the extra parts just keeps center part of the image*/
+}
+/* Content */
+#content{
+    margin-top: 120px;
+
+}
+#content h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* Sidebar  */
+#sidebar{
+    width: 25%;
+    background-color: #fafafa;
+    margin-right: 30px;
+    padding:20px;
+}
+#sidebar .widgets{
+    padding-bottom: 10px 0px;
+}
+#sidebar .widgets .widget h3{
+    margin-bottom: 10px;
+}
+#sidebar .widgets .widget ul li{
+    margin-bottom: 5px;
+}
+/* Main */ 
+#main{
+    width: 70%;
+}
+#main .col{
+    width: 30%;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+#main .col .card .desc p{
+    padding: 5px;
+}
+#main .col .card .desc button{
+    height: 30px;
+    width: 60px;
+}
+/* Footer */
+#footer{
+    padding:17px 0px; 
+}
+/* Specific CSS */ 
+/* Page-1 */
+/* Page-2 */
+/* ....
+.....
+*/
