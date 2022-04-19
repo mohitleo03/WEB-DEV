@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlantHUB App</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/372a4b2b76.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <nav>
+        <div class="nav-bg">.</div>
+        <ul>
+          <li>
+            <a href="" class="active">Home</a>
+          </li>
+          <li>
+            <a href="">Buy Pots</a>
+          </li>
+          <li>
+            <a href="">Services</a>
+          </li>
+          <li>
+            <label for="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </label>
+          </li>
+          <li>
+            <div class="search_box">
+              <input type="text" id="search" />
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="mySlides fade">
+        <img src="https://cdn.wallpapersafari.com/95/77/keHhL8.jpg" />
+        <div class="text font-family">Summer Plants</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/5925ed75be65945a7f0b3431/1603997565758-DM2IMPFCI7CJ2V4TIQZJ/Finding+Winter+Flowering+Plants+in+Our+Garden+Supply+Store+for+Lancaster+and+Harrisburg%2C+PA%2C+Area+Projects.jpeg"
+        />
+        <div class="text font-family">Winter Plants</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="https://wallpapercave.com/wp/wp5839759.jpg" />
+        <div class="text font-family">Spring Plants</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="https://wallpaperaccess.com/full/1957392.jpg" />
+        <div class="text font-family">Autumn Plants</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="https://images8.alphacoders.com/594/thumb-1920-594870.jpg" />
+        <div class="text font-family">Flowering Plants</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="https://wallpapercave.com/wp/wp7851936.jpg" />
+        <div class="text font-family">Indoor Plants</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <div class="row margin-top-3">
+      <div class="overflow-hidden width-50 margin-right-3 position-relative">
+        <div
+          id="card-name-0"
+          class="position-absolute z-index-2 top-88 plant-name left-6"
+        >
+          Hello
+        </div>
+        <div
+          id="card-fact-0"
+          class="position-absolute z-index-2 top-92 plant-fact left-6"
+        >
+          Hello
+        </div>
+        <div id="card-0" class="card-full"></div>
+      </div>
+      <div class="overflow-hidden width-50 position-relative">
+        <div
+          id="card-name-1"
+          class="position-absolute z-index-2 top-88 plant-name left-6"
+        >
+          Hello
+        </div>
+        <div
+          id="card-fact-1"
+          class="position-absolute z-index-2 top-92 plant-fact left-6"
+        >
+          Hello
+        </div>
+        <div id="card-1" class="card-full"></div>
+      </div>
+    </div>
+
+    <div class="height-25rem margin-top-3 info">
+      <img id="category-image" src="" alt="" />
+      <h1 id="category" class="font-family"></h1>
+      <p id="category-description" class="font-family"></p>
+    </div>
+
+    <div class="pattern">
+      <div class="row margin-top-3">
+        <div class="overflow-hidden width-66 margin-right-3 position-relative">
+          <div
+            id="card-name-2"
+            class="position-absolute z-index-2 top-88 plant-name left-4"
+          >
+            Hello
+          </div>
+          <div
+            id="card-fact-2"
+            class="position-absolute z-index-2 top-93 plant-fact left-4"
+          >
+            Hello
+          </div>
+          <div id="card-2" class="card-66"></div>
+        </div>
+
+        <div class="width-33">
+          <div class="column">
+            <div class="overflow-hidden position-relative">
+              <div
+                id="card-name-3"
+                class="position-absolute z-index-2 top-75 plant-name left-6"
+              >
+                Hello
+              </div>
+              <div
+                id="card-fact-3"
+                class="position-absolute z-index-2 top-85 plant-fact left-6"
+              >
+                Hello
+              </div>
+              <div id="card-3" class="card-30"></div>
+            </div>
+
+            <div class="overflow-hidden margin-top-3 position-relative">
+              <div
+                id="card-name-4"
+                class="position-absolute z-index-2 top-75 plant-name left-6"
+              >
+                Hello
+              </div>
+              <div
+                id="card-fact-4"
+                class="position-absolute z-index-2 top-85 plant-fact left-6"
+              >
+                Hello
+              </div>
+              <div id="card-4" class="card-30"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row margin-top-3">
+        <div class="overflow-hidden width-33 margin-right-3 position-relative">
+          <div
+            id="card-name-5"
+            class="position-absolute z-index-2 top-75 plant-name left-6"
+          >
+            Hello
+          </div>
+          <div
+            id="card-fact-5"
+            class="position-absolute z-index-2 top-85 plant-fact left-6"
+          >
+            Hello
+          </div>
+          <div id="card-5" class="card-30"></div>
+        </div>
+
+        <div class="overflow-hidden width-33 margin-right-3 position-relative">
+          <div
+            id="card-name-6"
+            class="position-absolute z-index-2 top-75 plant-name left-6"
+          >
+            Hello
+          </div>
+          <div
+            id="card-fact-6"
+            class="position-absolute z-index-2 top-85 plant-fact left-6"
+          >
+            Hello
+          </div>
+          <div id="card-6" class="card-30"></div>
+        </div>
+
+        <div class="overflow-hidden width-33 position-relative">
+          <div
+            id="card-name-7"
+            class="position-absolute z-index-2 top-75 plant-name left-6"
+          >
+            Hello
+          </div>
+          <div
+            id="card-fact-7"
+            class="position-absolute z-index-2 top-85 plant-fact left-6"
+          >
+            Hello
+          </div>
+          <div id="card-7" class="card-30"></div>
+        </div>
+      </div>
+
+      <div class="row margin-top-3">
+        <div class="width-33">
+          <div class="column margin-right-3">
+            <div class="overflow-hidden position-relative">
+              <div
+                id="card-name-8"
+                class="position-absolute z-index-2 top-75 plant-name left-6"
+              >
+                Hello
+              </div>
+              <div
+                id="card-fact-8"
+                class="position-absolute z-index-2 top-85 plant-fact left-6"
+              >
+                Hello
+              </div>
+              <div id="card-8" class="card-30"></div>
+            </div>
+
+            <div class="overflow-hidden margin-top-3 position-relative">
+              <div
+                id="card-name-9"
+                class="position-absolute z-index-2 top-75 plant-name left-6"
+              >
+                Hello
+              </div>
+              <div
+                id="card-fact-9"
+                class="position-absolute z-index-2 top-85 plant-fact left-6"
+              >
+                Hello
+              </div>
+              <div id="card-9" class="card-30"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden width-66 position-relative">
+          <div
+            id="card-name-10"
+            class="position-absolute z-index-2 top-88 plant-name left-4"
+          >
+            Hello
+          </div>
+          <div
+            id="card-fact-10"
+            class="position-absolute z-index-2 top-93 plant-fact left-4"
+          >
+            Hello
+          </div>
+          <div id="card-10" class="card-66"></div>
+        </div>
+      </div>
+      <div class="row margin-top-3">
+        <div class="overflow-hidden width-33 margin-right-3 position-relative">
+          <div
+            id="card-name-11"
+            class="position-absolute z-index-2 top-75 plant-name left-6"
+          >
+            Hello
+          </div>
+          <div
+            id="card-fact-11"
+            class="position-absolute z-index-2 top-85 plant-fact left-6"
+          >
+            Hello
+          </div>
+          <div id="card-11" class="card-30"></div>
+        </div>
+        <div class="overflow-hidden width-33 margin-right-3 position-relative">
+          <div
+            id="card-name-12"
+            class="position-absolute z-index-2 top-75 plant-name left-6"
+          >
+            Hello
+          </div>
+          <div
+            id="card-fact-12"
+            class="position-absolute z-index-2 top-85 plant-fact left-6"
+          >
+            Hello
+          </div>
+          <div id="card-12" class="card-30"></div>
+        </div>
+        <div class="overflow-hidden width-33 position-relative">
+          <div
+            id="card-name-13"
+            class="position-absolute z-index-2 top-75 plant-name left-6"
+          >
+            Hello
+          </div>
+          <div
+            id="card-fact-13"
+            class="position-absolute z-index-2 top-85 plant-fact left-6"
+          >
+            Hello
+          </div>
+          <div id="card-13" class="card-30"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-gray margin-top-3">
+        <div class="footer-custom">
+          <div class="footer-lists">
+            <div class="footer-list-wrap">
+              <h6 class="ftr-hdr">Call Us</h6>
+              <ul class="ftr-links-sub">
+                <li><a href="tel:+918130216394">+91 81302 16394</a></li>
+              </ul>
+            </div>
+            <!--/.footer-list-wrap-->
+            <div class="footer-list-wrap">
+              <h6 class="ftr-hdr">Mail Us</h6>
+              <ul class="ftr-links-sub">
+                <li><a href="mailto:namit19csu185@ncuindia.edu">planthubapi@gmail.com</a></li>
+              </ul>
+            </div>
+            <div class="footer-list-wrap">
+              <h6 class="ftr-hdr">Find Us</h6>
+              <ul class="ftr-links-sub">
+                <li><a href="https://www.google.com/maps/place/Model+Town,+Sector+11,+Gurugram,+Haryana+122001/@28.4553764,77.0145679,16z/data=!3m1!4b1!4m5!3m4!1s0x390d182f7e6cbfbd:0xbb9053509ff70bfa!8m2!3d28.4558423!4d77.018303">Gurgaon, India</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--/.footer-lists-->
+          <div class="footer-email">
+            <h6 class="ftr-hdr">Activate News Letter Service</h6>
+            <div id="ftr-email" class="ftr-email-form">
+              <div id="ftrEmailForm">
+                <input type="text" name="email_address_" id="ftrEmailInput" class="input" placeholder="Enter email address" />
+                <input type="submit" class="button" value="SUBMIT" />
+              </div>
+            </div>
+          </div>
+          <!--/.footer-email-->
+          
+          <!-- <div class="footer-legal">
+            <p>&copy; Art.com Inc. All Rights Reserved. | <a href="/help/privacy-policy.html" rel="nofollow">Privacy Policy</a> | <a href="/help/terms-of-use.html" rel="nofollow">Terms of Use</a> | <a href="/help/terms-of-sale.html" rel="nofollow">Terms of Sale</a></p>
+            <p>Art.com, You+Art, and Photos [to] Art are trademarks or registered trademarks of Art.com Inc.</p>
+            <p>Various aspects of this website are covered by issued US patent No. 7,973,796 and other pending patent applications.</p>
+          </div>
+        </div> -->
+        <!--/.footer-custom-->
+      </div>
+      <!--/.footer-gray-->
+      <div class="row justify-center" id="footer">
+        <p>© 2022 Plant Hub. All rights reserved | Design by</p>
+        <br />
+        <div>
+          <a href="https://www.linkedin.com/in/mohit-malik-b433311ba/">
+            &nbspMohit&nbsp</a
+          ><a href="https://www.linkedin.com/in/namitkumar16/">Namit&nbsp</a
+          ><a href="www.linkedin.com/in/mks001/">Manish&nbsp</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
