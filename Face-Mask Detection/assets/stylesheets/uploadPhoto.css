@@ -1,0 +1,166 @@
+/*
+Mjor break Ponits fr Media Query
+1200px
+992px
+768px
+576px
+*/
+/* Global Settings */
+*{                              /*  *  is universal selector*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;     /*for adjusting padding within div*/
+}
+body{
+    font-family: 'Mukta Malar', sans-serif;
+    background-color: cornflowerblue;
+    /* background-image: url(""); */
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*Helper Classes*/
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear::after{
+    content: "";
+    clear:both;
+    display: block;
+}
+.w-100{
+    width: 100%;
+}
+.row{
+    display: flex;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.grid{
+    display: grid;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-between{
+    justify-content: space-between;
+}
+/* Page Level Settings */
+
+/* container */
+button{
+    color: white;
+    background-color: #292560;
+    border: none;
+    font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 18px 30px;
+    font-size: 20px;
+    width: 250px;
+    margin: 30px 120px;
+}
+button:hover{
+    background-color: #fdb03d;
+    transition-delay: 0.25s;
+}
+.upload{
+    height: 80px;
+    background-color:white;
+    width:250px;
+    border: 1px solid black;
+    padding:28px 30px;
+    border-radius: 3px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.buttons{
+    height: 507px;
+}
+.two-buttons{
+    display: flex;
+    flex-direction: column;
+}
+#container{
+
+}
+.container{
+    width: 1215px;
+    margin: 0 auto;
+}
+/* Header */
+.header{
+margin: 30px;
+font-size:40px;
+}
+h1{
+    text-align: center;
+}
+#image{
+    height: 300px;
+    padding:40px;
+    padding-left: -40px;
+}
+#result{
+    padding:40px;
+}
+/* Navbar */
+#navbar{
+
+}
+/* Banner */
+#banner{
+
+}
+/* Main */ 
+#main{
+
+}
+/* Sidebar  */
+#sidebar{
+    
+}
+/* Footer */
+footer{
+    background-color: #0D1326;  
+}
+#footer{
+    padding:18px 0px; 
+}
+footer p{
+    color: #6c757d;
+    margin-right: 4px;
+    font-size: 16px;
+}
+footer a{
+    color: white;
+    font-size: 16px;
+    font-weight: 600px;
+}
+footer a:hover{
+    color: #fdb03d;
+}
+/* Specific CSS */ 
+/* Page-1 */
+/* Page-2 */
+/* ....
+.....
+*/

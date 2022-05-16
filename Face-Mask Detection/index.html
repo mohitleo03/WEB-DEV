@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/stylesheets/main.css">
     <title>Document</title>
+    <script>
+        function moveToUpload(){
+            location.href="./uploadPhoto.html"
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -13,22 +18,12 @@
             <h1>Face-Mask Detection</h1>
         </div>
         <div class="buttons center">
-            <div class="two-buttons">
                 <div>
-                    <button>Face-Mask Detection</button>
+                    <button onclick="moveToUpload()">Face-Mask Detection</button>
                 </div>
                 <div>
                     <button>Check With Video</button>
                 </div>
-            </div>
-            <div class="two-buttons">
-                <div>
-                    <button>Video Surveillance</button>
-                </div>
-                <div>
-                    <button>ABC</button>
-                </div>
-            </div>
         </div>
     </div>
     <footer>
