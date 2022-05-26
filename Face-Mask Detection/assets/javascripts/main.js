@@ -15,10 +15,10 @@ function process(){
         final_path = "./assets/images/"+temp;
         result = "Person is not Wearing Mask";
     }
-    else{
-        final_path = "./assets/images/"+temp;
-        result = "Unidentified Image";
-    }
+    // else{
+    //     final_path = "./assets/images/"+temp;
+    //     result = "Unidentified Image";
+    // }
     document.getElementById('image').src = final_path;
     document.getElementById('result').innerText = result;
     },2000)
