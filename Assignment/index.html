@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS/userCard.css">
+
+</head>
+
+<body>
+  <div style="text-align: center;">
+
+
+    <h2>Users</h2>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+  </div>
+  <ul id="myUL" class="card-list">
+
+    <li><a href="#"> <img src="uploads/girl4.jpg">
+        <h2>Emma Cleiver</h2>
+        <p>AbrahmZed@gmail.com</p>
+      </a></li>
+
+    <li><a href="#"> <img src="uploads/boy5.jpg">
+
+        <h2>Zyan Connor</h2>
+        <p>AbrahmZed@gmail.com</p>
+      </a></li>
+    <li><a href="#"> <img src="uploads/girl3.jpg">
+
+        <h2>Elizabeth Swann</h2>
+        <p>AbrahmZed@gmail.com</p>
+      </a></li>
+
+    <li><a href="#"> <img src="uploads/boy4.jpg">
+
+        <h2>Andrew Crow</h2>
+        <p>AbrahmZed@gmail.com</p>
+      </a></li>
+    <li><a href="#"><img src="uploads/girl2.jpg">
+
+        <h2>lilly rose</h2>
+        <p>AbrahmZed@gmail.com</p>
+      </a></li>
+    <li><a href="#"><img src="uploads/boy3.jpg">
+
+        <h2>Zen affleck</h2>
+        <p>AbrahmZed@gmail.com</p>
+      </a></li>
+    <li><a href="#"><img src="uploads/girl5.jpg">
+        <h2>Sissy Rose</h2>
+        <p>AbrahmZed@gmail.com</p>
+      </a></li>
+
+    <li><a href="#"> <img src="uploads/girl1.jpg">
+
+        <h2>Emily rose</h2>
+        <p>AbrahmZed@gmail.com</p>
+    </li>
+
+
+  </ul>
+ 
+  <script>
+    function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>
